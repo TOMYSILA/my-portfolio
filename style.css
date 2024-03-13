@@ -57,8 +57,8 @@ li a:hover {
     .nav-wrapper {
         display: none;
     }
-}
 
+    
   :root {
     --accent-color: #fff;
     --gradient-color: #FBFBFB;
@@ -93,11 +93,7 @@ li a:hover {
     font-family: 'Lato', sans-serif;
     transition: all .5s ease;
   }
-  a.active,a:hover{
-    border-left: 5px solid var(--accent-color);
-    color: #fff;
-     background: linear-gradient(to left, var(--accent-color), var(--gradient-color));
-  }
+  
   .sidebar a i{
     font-size: 23px;
     margin-right: 16px;
@@ -110,7 +106,6 @@ li a:hover {
     display: none;
   }
   label #btn,label #cancel{
-    content: '▼';
     position: absolute;
     left: 5px;
     cursor: pointer;
@@ -193,6 +188,8 @@ li a:hover {
   
 /* side bar end */
 
+}
+
 /* Container */
 .container-content1 {
     margin: auto;
@@ -236,9 +233,9 @@ li a:hover {
 }
 
 .medsos img:hover {
-    transform: scale(1.06);
-    background-color: rgba(159, 198, 255, 0.902);
+    background-color: rgba(255, 255, 255, 0.8);
 }
+
 
 .biodata {
     margin: 0 auto;
@@ -310,10 +307,13 @@ li a:hover {
 }
 
 .skill span:hover {
-    background-color: rgb(23, 61, 98);
+    h2 {
+        color: rgb(0, 140, 255);
+        text-shadow: 0px 0px 1px white;
+    }
+    background-color: rgb(25, 80, 136);
     transform: scale(1.05);
 }
-
 
 .skill h2 {
     margin-bottom: 10px;
@@ -410,23 +410,26 @@ li a:hover {
    margin: 0px 0 100px;
 }
 
-#project {
+.projectku {
     width: 300px;
     margin: 20px 30px;
     border-radius: 10px;
+    transition: all 0.5s;
 }
-#project p {
+
+.projectku:hover {
+    transform: scale(1.05);
+}
+
+.projectku p {
     padding-top: 5px;
     font-weight: 600;
 }
 
-#project img {
-    max-width: 300px;
+.projectku img {
+    width: 291px;
     border-radius: 10px;
-}
-
-.project img{
-
+    border: 1px solid rgb(0, 119, 255);
 }
 /* PROJECT END */
 
